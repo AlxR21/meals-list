@@ -1,16 +1,100 @@
-# React + Vite
+# 🍽️ Meals List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application that fetches and displays meal recipes from the free TheMealDB API with a beautiful yellow-themed user interface.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Meal Search**: Browse meals based on search query (currently showing rice-based meals)
+- **Responsive Grid**: Auto-responsive card grid layout for different screen sizes
+- **Yellow Aesthetic**: Warm, inviting color scheme with smooth hover animations
+- **Real-time Data**: Fetches meal data from [TheMealDB API](https://www.themealdb.com/api.php)
+- **Meal Cards**: Each card displays:
+  - Meal thumbnail image
+  - Meal name
+  - Category information
 
-## React Compiler
+## 🚀 Quick Start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+- Node.js (v16+)
+- npm or yarn
 
-## Expanding the ESLint configuration
+### Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clone the repository
+git clone https://github.com/AlxR21/meals-list.git
+cd meals-list
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+The app will open at `http://localhost:5173` by default.
+
+## 📁 Project Structure
+
+```
+meals-list/
+├── src/
+│   ├── App.jsx         # Main component with meal fetching logic
+│   ├── App.css         # Yellow-themed styles
+│   ├── index.css       # Global styles
+│   ├── main.jsx        # React entry point
+│   └── assets/         # Static images and icons
+├── public/             # Public assets
+├── index.html          # HTML template
+├── package.json        # Dependencies
+└── vite.config.js      # Vite configuration
+```
+
+## 🎨 Design Highlights
+
+- **Color Palette**: 
+  - Primary Yellow: `#ffd454`
+  - Light Yellow: `#fff9db`
+  - Dark Brown: `#6b5b00`
+- **Interactions**: Card hover lift effect with smooth transitions
+- **Typography**: Clean, modern sans-serif fonts for readability
+
+## 🔧 Build & Deploy
+
+```bash
+# Build for production
+npm run build
+
+# Preview production build locally
+npm run preview
+```
+
+## 📚 Technologies Used
+
+- **React** - UI library
+- **Vite** - Fast build tool
+- **CSS3** - Styling with gradients and animations
+- **TheMealDB API** - Meal database
+
+## 🌐 API Reference
+
+Fetches data from:
+```
+https://api.freeapi.app/api/v1/public/meals?page=1&limit=10&query=rice
+```
+
+Returns paginated meal data with detailed recipe information.
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Feel free to fork, modify, and submit pull requests. Suggestions for improvements are welcome!
+
+---
+
+**Created by**: Alok  
+**Repository**: [AlxR21/meals-list](https://github.com/AlxR21/meals-list)
