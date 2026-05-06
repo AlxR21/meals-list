@@ -27,9 +27,9 @@ function App() {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    console.log(meals);
-  }, [meals]);
+  // useEffect(() => {
+  //   console.log(meals);
+  // }, [meals]);
 
   return (
     <>
